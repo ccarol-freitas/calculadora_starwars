@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Font Awesome Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Calculadora | Star Wars - Mentes Notavéis</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="content">
+            <h2 class="title">CALCULADORA</h2>
+            <div class="calculator">
+                <p class="result" id="result"></p>
+                <div class="keyboard">
+
+                    <div class="grid-main">
+                        <button class="blind_btn"></button>
+                        <button class="blind_btn"></button>
+
+                        <button class="key_btn" onclick="clearDisplay()">C</button>
+                        <button class="key_btn" onclick="getDigit('/')">/</button>
+
+                        <button class="key_btn" onclick="getDigit('7')">7</button>
+                        <button class="key_btn" onclick="getDigit('8')">8</button>
+                        <button class="key_btn" onclick="getDigit('9')">9</button>
+                        <button class="key_btn" onclick="getDigit('*')">X</button>
+
+                        <button class="key_btn" onclick="getDigit('4')">4</button>
+                        <button class="key_btn" onclick="getDigit('5')">5</button>
+                        <button class="key_btn" onclick="getDigit('6')">6</button>
+                        <button class="key_btn" onclick="getDigit('-')">-</button>
+
+                        <button class="key_btn" onclick="getDigit('1')">1</button>
+                        <button class="key_btn" onclick="getDigit('2')">2</button>
+                        <button class="key_btn" onclick="getDigit('3')">3</button>
+                        <button class="key_btn" onclick="getDigit('+')">+</button>
+
+                        <button class="blind_btn"></button>
+                        <button class="key_btn" onclick="getDigit('0')">0</button>
+                        <button class="blind_btn"></button>
+                        <button class="key_btn" onclick="operation()">=</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            Desenvolvido por Carol Freitas<i class="fa fa-heart"></i>
+        </footer>
+    </div>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
